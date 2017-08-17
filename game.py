@@ -19,6 +19,7 @@ def main():
     print("-===================-")
     printMap()
     getUserInput()
+    # TODO: Fix turn changing after first
     if (changeTurn == True):
       if (currTurn == "X"):
         currTurn = "O"
@@ -29,6 +30,7 @@ def main():
     for i in range(5):
       print("")
 
+# print game map
 def printMap():
   print("|---- 1 - 2 - 3 ----|")
   for y in range(3):
@@ -42,7 +44,8 @@ def printMap():
         print(gameMap[x][y] + " |"),
     print("\n|    -----------    |")
   print("-===================-")
-    
+
+# get user input of column and row
 def getUserInput():
   try:
     colChoice = int(input("Enter a COLUMN: "))
