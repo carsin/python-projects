@@ -1,11 +1,15 @@
-global gameMap
-global currTurn
-global changeTurn
-global turnNum
+gameMap = None
+currTurn = None
+changeTurn = None
+turnNum = None
 
 def main():
+  global gameMap
+  global currTurn
+  global changeTurn
+  global turnNum
   gameMap = [["_" for i in range(3)] for j in range(3)]
-  currTurn = "X"
+  currTurn = "O"
   changeTurn = True
   turnNum = 0
   # main game loop
@@ -17,7 +21,7 @@ def main():
     print("|  Player " + currTurn + "'s turn  |")
     print("-===================-")
     printMap(gameMap)
-    getUserInput(gameMap, currTurn)
+    getUserInput(gameMap)
     # TODO: Fix turn changing after first
     if (changeTurn == True):
       if (currTurn == "X"):
@@ -45,7 +49,10 @@ def printMap(map):
   print("-===================-")
 
 # get user input of column and row
-def getUserInput(map, currTurn):
+def getUserInput(map):
+  global currTurn
+  global changeTurn
+  
   try:
     colChoice = int(input("Enter a COLUMN: "))
     if (colChoice > 3 or colChoice < 1):
