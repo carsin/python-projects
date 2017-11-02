@@ -50,9 +50,9 @@ def draw(canvas):
 
 def startForLoops():
     for i in range (0, 5):
-        print("This loop is pure vanity. It has looped " + str(i) + " times")
+        print("This loop is pure vanity. It has looped " + str(i + 1) + " times")
     for i in range (0, 10):
-        print("This loop is the second pure vanity loop. It has looped " + str(i) + " times")
+        print("This loop is the second pure vanity loop. It has looped " + str(i + 1) + " times")
 
 startForLoops()
 frame = simplegui.create_frame("Home", 500, 500)
