@@ -16,6 +16,7 @@ Add an event
 Print all events
 Print events in a specific month
 '''
+
 eventMonths = []
 eventDays = []
 eventYears = []
