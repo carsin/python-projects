@@ -84,5 +84,5 @@ badResponses = [ "Sorry.", "Sorry to hear that.", "Uh oh.", "Awww. Sorry.", "Dam
 def start():
     print("Hello!")
     getName()
-    
+
 start()
