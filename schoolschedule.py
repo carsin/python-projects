@@ -20,6 +20,8 @@ while (currClass.lower() != "stop"):
         print("* " + lname + ", " + fname + "\t \t ID: " + str(studentId) + " \t*")
         print("*********************************************")
         print("*\t\t\t\t\t*")
+
         for x in range (0, len(classes)):
-            print("* Block " + str(x + 1) + ": " + classes[x] + "\t Room: " + str(classNums[x]) + "\t *") 
+            print("* Block " + str(x + 1) + ": " + classes[x] + "\t Room: " + str(classNums[x]) + "\t *")
+
         print("*********************************************")
